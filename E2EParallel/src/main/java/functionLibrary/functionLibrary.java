@@ -1047,4 +1047,21 @@ public static Connection dbConnection() {
 	logger.log(Status.INFO, "Opened database successfully");
 	return c;
 }
+
+
+
+public static void sendText(WebElement element, String text) {
+	try {
+		TimeUnit.SECONDS.sleep(1);
+		if (element != null && text != null) {
+			element.sendKeys(text);
+		} else {
+			
+			logger.log(Status.FAIL, "Unable not found");
+		}
+	} catch (Exception e) {
+		logger.error(e);
+		logger.log(Status.ERROR, e.getClass().getName() + ": " + e.getMessage());
+	}
+} 
 }

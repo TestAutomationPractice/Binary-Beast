@@ -1,31 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="platform" value="web"/>
-  <test name="Web Testing(failed)" parallel="methods">
-    <parameter name="platform" value="web"/>
+  <parameter name="browser" value="api"/>
+  <test name="Web Testing(failed)" parallel="tests">
+    <parameter name="browser" value="api"/>
     <classes>
-      <class name="testRunner.loginTestRunner">
+      <class name="testRunner.addMoviesAPI">
         <methods>
           <include name="Login" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="tearDown"/>
           <include name="initialize"/>
-        </methods>
-      </class> <!-- testRunner.loginTestRunner -->
-      <class name="testRunner.searchFlightTestRunner">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="beforeMethod"/>
           <include name="tearDown"/>
-          <include name="tearDownClass"/>
-          <include name="SearchFlight" invocation-numbers="0"/>
-          <include name="initialize"/>
-          <include name="PrepareReport"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- testRunner.searchFlightTestRunner -->
+      </class> <!-- testRunner.addMoviesAPI -->
     </classes>
   </test> <!-- Web Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

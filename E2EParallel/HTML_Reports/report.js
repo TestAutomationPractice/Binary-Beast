@@ -1,554 +1,164 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/features/addMoviesAPI.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Login to Mercury demo tours site",
-  "description": "1. User should Not be able to login to the application with invalid credentials\n2. User should be able to login to the application with valid credentials",
-  "id": "login-to-mercury-demo-tours-site",
-  "keyword": "Feature",
+  "line": 1,
+  "name": "Title of your feature",
+  "description": "I want to use this template for my feature file",
+  "id": "title-of-your-feature",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "line": 5,
+  "name": "Add a Customer",
+  "description": "",
+  "id": "title-of-your-feature;add-a-customer",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
-      "name": "@login"
+      "line": 4,
+      "name": "@tag1"
     }
   ]
 });
-formatter.scenarioOutline({
+formatter.step({
   "line": 6,
-  "name": "Login with Invalid credentials",
-  "descripti{
-  "line": 7,
-  "name": "Search a Round trip flight",
-  "description": "",
-  "id": "login-to-mercury-demo-tours-site-and-search-for-a-flight;searc);
+  "name": "User want to add a new movie",
+  "keyword": "Given "
+});
 formatter.step({
   "line": 7,
-  "name": "The user opens mercury tour demo site",
-  "keyword": "Given "{
-  
-formatter.step({
-  "line": 8,
-  "name": "The user enters \u0027\u003cuser_name\u003e\u0027 and \u0027\u003cpassword\u003e\u0027 and click on login button",
+  "name": "User adds movie with \"\u003cTitle\u003e\", \"\u003cDirector\u003e\",\"\u003cDescription\u003e\",\"\u003cCategories\u003e\",\"\u003cImageURL\u003e\",\"\u003cRating\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "The home page should not be displayed",
+  "line": 8,
+  "name": "Movie is added successfully",
   "keyword": "Then "
-}{
+});
+formatter.examples({
   "line": 10,
-  "nam{
-  "line": 11,
   "name": "",
   "description": "",
-  "id": "login-to-mercury-demo-tours-site;login-with-invalid-credentials;",
+  "id": "title-of-your-feature;add-a-customer;",
   "rows": [
     {
       "cells": [
-        "user_name",
-        "password"
+        "Title",
+        "Director",
+        "Description",
+        "Categories",
+        "ImageURL",
+        "Rating"
+      ],
+      "line": 11,
+      "id": "title-of-your-feature;add-a-customer;;1"
+    },
+    {
+      "cells": [
+        "Chhichhore",
+        "Nitesh Talwar",
+        "Great Comedy Movie",
+        "Comedy",
+        "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/chhichhore-770x433.jpeg?FwxPwJC2sqo.UXyQWZ8DZGI9iaj1GjUP",
+        "4"
       ],
       "line": 12,
-      "id": "login-to-mercury-demo-tours-site;login-with-invalid-credentials;;1"
-    },
-    {
-      "cells": [
-        "test",
-        "test"
-      ],
-      "line": 13,
-      "id": "login-to-mercury-demo-tours-site;login-with-invalid-credentials;;2"
+      "id": "title-of-your-feature;add-a-customer;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3677534861,
+  "duration": 1617320,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 13,
-  "name": "Login with Invalid credentials",
+  "line": 12,
+  "name": "Add a Customer",
   "description": "",
-  "id": "login-to-mercury-demo-tours-site;login-with-invalid-credentials;;2",
+  "id": "title-of-your-feature;add-a-customer;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
-      "name": "@login"
+      "line": 4,
+      "name": "@tag1"
     }
   ]
+});
+formatter.step({
+  "line": 6,
+  "name": "User want to add a new movie",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 7,
-  "name": "The user opens mercury tour demo site",
-  "keyword": "Given "
+  "name": "User adds movie with \"Chhichhore\", \"Nitesh Talwar\",\"Great Comedy Movie\",\"Comedy\",\"https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/chhichhore-770x433.jpeg?FwxPwJC2sqo.UXyQWZ8DZGI9iaj1GjUP\",\"4\"",
+  "matchedColumns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "The user enters \u0027test\u0027 and \u0027test\u0027 and click on login button",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "The home page should not be displayed",
+  "name": "Movie is added successfully",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepdefinition.the_browser_is_open_with_URL()"
+  "location": "addMoviesAPI.user_want_to_add_a_new_movie()"
 });
 formatter.result({
-  "duration": 4856504890,
+  "duration": 62517162,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "test",
-      "offset": 17
+      "val": "Chhichhore",
+      "offset": 22
     },
     {
-      "val": "test",
-      "offset": 28
+      "val": "Nitesh Talwar",
+      "offset": 36
+    },
+    {
+      "val": "Great Comedy Movie",
+      "offset": 52
+    },
+    {
+      "val": "Comedy",
+      "offset": 73
+    },
+    {
+      "val": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/chhichhore-770x433.jpeg?FwxPwJC2sqo.UXyQWZ8DZGI9iaj1GjUP",
+      "offset": 82
+    },
+    {
+      "val": "4",
+      "offset": 205
     }
   ],
-  "location": "LoginStepdefinition.the_user_enters_valid_user_name_and_password_and_click_on_login_button(String,String)"
+  "location": "addMoviesAPI.user_adds_movie_with(String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 3206620910,
+  "duration": 2120294684,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepdefinition.the_home_page_shouldnot_be_displayed()"
+  "location": "addMoviesAPI.movie_is_added_successfully()"
 });
 formatter.result({
-  "duration": 480425324,
+  "duration": 16411,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2420751143,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 15,
-  "name": "Login with Valid credentials",
-  "description": "",
-  "id": "login-to-mercury-demo-tours-site;login-with-valid-credentials",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "The user opens mercury tour demo site",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "The user enters \u0027\u003cuser_name\u003e\u0027 and \u0027\u003cpassword\u003e\u0027 and click on login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "The home page should be displayed",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 20,
-  "name": "",
-  "description": "",
-  "id": "login-to-mercury-demo-tours-site;login-with-valid-credentials;",
-  "rows": [
-    {
-      "cells": [
-        "user_name",
-        "password"
-      ],
-      "line": 21,
-      "id": "login-to-mercury-demo-tours-site;login-with-valid-credentials;;1"
-    },
-    {
-      "cells": [
-        "mercury",
-        "mercury"
-      ],
-      "line": 22,
-      "id": "login-to-mercury-demo-tours-site;login-with-valid-credentials;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 2287983951,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 22,
-  "name": "Login with Valid credentials",
-  "description": "",
-  "id": "login-to-mercury-demo-tours-site;login-with-valid-credentials;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@login"
-    }
-  ]
-});
-formatter.step({
-  "line": 16,
-  "name": "The user opens mercury tour demo site",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "The user enters \u0027mercury\u0027 and \u0027mercury\u0027 and click on login button",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "The home page should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepdefinition.the_browser_is_open_with_URL()"
-});
-formatter.result({
-  "duration": 2347481995,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "mercury",
-      "offset": 17
-    },
-    {
-      "val": "mercury",
-      "offset": 31
-    }
-  ],
-  "location": "LoginStepdefinition.the_user_enters_valid_user_name_and_password_and_click_on_login_button(String,String)"
-});
-formatter.result({
-  "duration": 6222389323,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepdefinition.the_home_page_should_be_displayed()"
-});
-formatter.result({
-  "duration": 6669593766,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2137174981,
-  "status": "passed"
-});
-}); "duration": 2181139096,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 29,
-  "name": "Search a One way flight",
-  "description": "",
-  "id": "login-to-mercury-demo-tours-site-and-search-for-a-flight;search-a-one-way-flight",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 30,
-  "name": "The user opens mercury tour demo site",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 31,
-  "name": "The user enters \u0027\u003cuser_name\u003e\u0027 and \u0027\u003cpassword\u003e\u0027 and clicks on login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "User enters Flight details and clicks Continue",
-  "rows": [
-    {
-      "cells": [
-        "Fields",
-        "Values"
-      ],
-      "line": 33
-    },
-    {
-      "cells": [
-        "TripType",
-        "oneway"
-      ],
-      "line": 34
-    },
-    {
-      "cells": [
-        "Passanger",
-        "1"
-      ],
-      "line": 35
-    },
-    {
-      "cells": [
-        "DepartingFrom",
-        "London"
-      ],
-      "line": 36
-    },
-    {
-      "cells": [
-        "MonthOn",
-        "March"
-      ],
-      "line": 37
-    },
-    {
-      "cells": [
-        "FromDay",
-        "20"
-      ],
-      "line": 38
-    },
-    {
-      "cells": [
-        "ArrivingIn",
-        "Paris"
-      ],
-      "line": 39
-    },
-    {
-      "cells": [
-        "ReturningMonth",
-        "NA"
-      ],
-      "line": 40
-    },
-    {
-      "cells": [
-        "ReturningDay",
-        "NA"
-      ],
-      "line": 41
-    },
-    {
-      "cells": [
-        "ServClass",
-        "Business"
-      ],
-      "line": 42
-    },
-    {
-      "cells": [
-        "Airline",
-        "No Preference"
-      ],
-      "line": 43
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 44,
-  "name": "User is Navigated to Select Flight page",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 46,
-  "name": "",
-  "description": "",
-  "id": "login-to-mercury-demo-tours-site-and-search-for-a-flight;search-a-one-way-flight;",
-  "rows": [
-    {
-      "cells": [
-        "user_name",
-        "password"
-      ],
-      "line": 47,
-      "id": "login-to-mercury-demo-tours-site-and-search-for-a-flight;search-a-one-way-flight;;1"
-    },
-    {
-      "cells": [
-        "mercury",
-        "mercury"
-      ],
-      "line": 48,
-      "id": "login-to-mercury-demo-tours-site-and-search-for-a-flight;search-a-one-way-flight;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 2210083834,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 48,
-  "name": "Search a One way flight",
-  "description": "",
-  "id": "login-to-mercury-demo-tours-site-and-search-for-a-flight;search-a-one-way-flight;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@Smoke1"
-    }
-  ]
-});
-formatter.step({
-  "line": 30,
-  "name": "The user opens mercury tour demo site",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 31,
-  "name": "The user enters \u0027mercury\u0027 and \u0027mercury\u0027 and clicks on login button",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "User enters Flight details and clicks Continue",
-  "rows": [
-    {
-      "cells": [
-        "Fields",
-        "Values"
-      ],
-      "line": 33
-    },
-    {
-      "cells": [
-        "TripType",
-        "oneway"
-      ],
-      "line": 34
-    },
-    {
-      "cells": [
-        "Passanger",
-        "1"
-      ],
-      "line": 35
-    },
-    {
-      "cells": [
-        "DepartingFrom",
-        "London"
-      ],
-      "line": 36
-    },
-    {
-      "cells": [
-        "MonthOn",
-        "March"
-      ],
-      "line": 37
-    },
-    {
-      "cells": [
-        "FromDay",
-        "20"
-      ],
-      "line": 38
-    },
-    {
-      "cells": [
-        "ArrivingIn",
-        "Paris"
-      ],
-      "line": 39
-    },
-    {
-      "cells": [
-        "ReturningMonth",
-        "NA"
-      ],
-      "line": 40
-    },
-    {
-      "cells": [
-        "ReturningDay",
-        "NA"
-      ],
-      "line": 41
-    },
-    {
-      "cells": [
-        "ServClass",
-        "Business"
-      ],
-      "line": 42
-    },
-    {
-      "cells": [
-        "Airline",
-        "No Preference"
-      ],
-      "line": 43
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 44,
-  "name": "User is Navigated to Select Flight page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepdefinition.the_browser_is_open_with_URL()"
-});
-formatter.result({
-  "duration": 2516063980,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "mercury",
-      "offset": 17
-    },
-    {
-      "val": "mercury",
-      "offset": 31
-    }
-  ],
-  "location": "FlightFinderStepDefinition.the_user_enters_valid_user_name_and_password_and_click_on_login_button(String,String)"
-});
-formatter.result({
-  "duration": 6529317250,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FlightFinderStepDefinition.user_enters_Flight_details_and_clicks_Continue(String,String\u003e)"
-});
-formatter.result({
-  "duration": 2864710737,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FlightFinderStepDefinition.user_is_Navigated_to_Select_Flight_page()"
-});
-formatter.result({
-  "duration": 34956354,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 149043958,
-  "status": "passed"
+  "duration": 260631007,
+  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinition.Hooks.loginOut(Hooks.java:30)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat testRunner.addMoviesAPI.Login(addMoviesAPI.java:39)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:639)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)\r\n\tat java.util.concurrent.FutureTask.run(Unknown Source)\r\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)\r\n\tat java.util.concurrent.FutureTask.run(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)\r\n\tat java.lang.Thread.run(Unknown Source)\r\n",
+  "status": "failed"
 });
 });

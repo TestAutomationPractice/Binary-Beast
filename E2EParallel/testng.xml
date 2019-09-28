@@ -7,9 +7,9 @@
   <test  name="Web Testing"  parallel="methods" thread-count="2">
    <parameter name="browser" value="chrome"/>  
     <classes>    
-      <class name="testRunner.searchFlightTestRunner"/>
-      <class name="testRunner.loginTestRunner"/>      
+      <class name="testRunner.loginMoviesRunner"/>
+      <class name="testRunner.addMovieRunner"/>     
+       <class name="testRunner.addMoviesAPI"/> 
     </classes>
-  </test> <!-- Test -->
-
+  
 </suite> <!-- Suite -->
