@@ -28,7 +28,7 @@ public class Hooks extends TestBase {
 		public void loginOut() throws IOException {
 			 extent.flush();
 			 if(!(TLDriverFactory.getTLDriver().equals(null))){
-			 TLDriverFactory.getTLDriver().close();
+			// TLDriverFactory.getTLDriver().close();
 			 }
 		}		 
 

@@ -24,38 +24,42 @@ public class addMovieStepDefinition {
 	public static ReadProperties R = new ReadProperties();
 	public static Properties prop = R.prop;
 	
-	@Given("^The user opens Movie Rental site$")
+	@Given("^The admin open Movie Rental site$")
 	public void the_user_opens_Movie_Rental_site() throws Throwable {
 		logger = TestBase.getScenario();
-		logger.info("Step: The user opens mercury tour demo site");		
+		logger.info("Step: The user opens Ticket Site");		
+		driver = TLDriverFactory.getTLDriver();
+		HomePage = new HomePage(driver,logger);
+		HomePage.openApplication(prop.getProperty("WebURL"));
+	}
+	
+	
+	@Given("^The admin open Movie Rental site Parallely$")
+	public void the_admin_opens_Movie_Rental_site() throws Throwable {
+		logger = TestBase.getScenario();
+		logger.info("Step: The user opens Ticket Site");	
+		TLDriverFactory.setTLDriver(prop.getProperty("browser"));
 		driver = TLDriverFactory.getTLDriver();
 		HomePage = new HomePage(driver,logger);
 		HomePage.openApplication(prop.getProperty("WebURL"));
 	}
 
-	@When("^Admin user logins$")
+	@When("^Admin user login$")
 	public void admin_user_logins() throws Throwable {
 		HomePage.loginUser(prop.getProperty("UserName"), prop.getProperty("Password"));
-		addMovie = new AddMovie(driver,logger);
-		addMovie.clickAddMovie();
-	}
-	
-	@Given("^User want to add a new movie$")
-	public void user_want_to_add_a_new_movie() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+		
 		
 	}
+	
 
-	@When("^User adds movie with \"([^\"]*)\", \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
+	@When("^Admin adds movie with \"([^\"]*)\", \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
 	public void user_adds_movie_with(String Title, String Director, String Description, String Categories, String ImageUrl, String Rating) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+		addMovie = new AddMovie(driver,logger);
+		addMovie.clickAddMovie();
 		addMovie.addDetails(Title, Director, Description, Categories, ImageUrl, Rating);
 	}
 
-	@Then("^Movie is added successfully$")
-	public void movie_is_added_successfully() throws Throwable {
-
-	}
 
 
 }

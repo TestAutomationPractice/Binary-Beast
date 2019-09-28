@@ -10,4 +10,4 @@ Feature: Title of your feature
 
     Examples: 
       | Title      | Director      | Description        | Categories | ImageURL                                                                                                                 |Rating|
-      | Chhichhore | Nitesh Talwar | Great Comedy Movie | Comedy     | https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/chhichhore-770x433.jpeg?FwxPwJC2sqo.UXyQWZ8DZGI9iaj1GjUP |4|
+      | Chhichhore50 | Nitesh Talwar | Great Comedy Movie | Comedy     | https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/chhichhore-770x433.jpeg?FwxPwJC2sqo.UXyQWZ8DZGI9iaj1GjUP |4|

@@ -34,7 +34,7 @@ public void setUpClass() throws Exception {
 	
 }
 
-@Test(groups = "cucumber", description = "customerAPI", dataProvider = "features")
+@Test(groups = "cucumber", description = "LoginUser", dataProvider = "features")
 public void Login(CucumberFeatureWrapper cucumberFeature) {
 	 testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
 }

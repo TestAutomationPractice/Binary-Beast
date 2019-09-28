@@ -1,103 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2832" started-at="2019-09-28T08:04:19Z" finished-at="2019-09-28T08:04:22Z">
+  <suite name="Suite" duration-ms="21501" started-at="2019-09-28T11:24:25Z" finished-at="2019-09-28T11:24:47Z">
     <groups>
       <group name="cucumber">
-        <method signature="addMoviesAPI.Login(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.addMoviesAPI@69a10787]" name="Login" class="testRunner.addMoviesAPI"/>
+        <method signature="addMovieRunner.Login(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="Login" class="testRunner.addMovieRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Web Testing" duration-ms="2832" started-at="2019-09-28T08:04:19Z" finished-at="2019-09-28T08:04:22Z">
-      <class name="testRunner.addMoviesAPI">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testRunner.addMoviesAPI@69a10787]" name="initialize" is-config="true" duration-ms="6" started-at="2019-09-28T13:34:19Z" finished-at="2019-09-28T13:34:19Z">
+    <test name="Web Testing" duration-ms="21501" started-at="2019-09-28T11:24:25Z" finished-at="2019-09-28T11:24:47Z">
+      <class name="testRunner.addMovieRunner">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="initialize" is-config="true" duration-ms="7" started-at="2019-09-28T16:54:25Z" finished-at="2019-09-28T16:54:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.addMoviesAPI@69a10787]" name="setUpClass" is-config="true" duration-ms="231" started-at="2019-09-28T13:34:19Z" finished-at="2019-09-28T13:34:20Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="setUpClass" is-config="true" duration-ms="262" started-at="2019-09-28T16:54:25Z" finished-at="2019-09-28T16:54:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:testRunner.addMoviesAPI@69a10787]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2019-09-28T13:34:20Z" finished-at="2019-09-28T13:34:20Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2019-09-28T16:54:26Z" finished-at="2019-09-28T16:54:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void testRunner.addMoviesAPI.Login(cucumber.api.testng.CucumberFeatureWrapper)]]>
+                <![CDATA[public void testRunner.addMovieRunner.Login(cucumber.api.testng.CucumberFeatureWrapper)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Login(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.addMoviesAPI@69a10787]" name="Login" duration-ms="2474" started-at="2019-09-28T13:34:20Z" description="customerAPI" data-provider="features" finished-at="2019-09-28T13:34:22Z">
+        <test-method status="PASS" signature="Login(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="Login" duration-ms="21138" started-at="2019-09-28T16:54:26Z" description="addMovies" data-provider="features" finished-at="2019-09-28T16:54:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Title of your feature]]>
+                <![CDATA[Add Movie when logged in with Admin]]>
               </value>
             </param>
           </params>
-          <exception class="cucumber.runtime.CucumberException">
-            <message>
-              <![CDATA[java.lang.NullPointerException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at testRunner.addMoviesAPI.Login(addMoviesAPI.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.NullPointerException
-	at stepDefinition.Hooks.loginOut(Hooks.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
-	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	... 16 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testRunner.addMoviesAPI@69a10787]" name="tearDown" is-config="true" duration-ms="6" started-at="2019-09-28T13:34:22Z" finished-at="2019-09-28T13:34:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-09-28T16:54:47Z" finished-at="2019-09-28T16:54:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.addMoviesAPI@69a10787]" name="tearDownClass" is-config="true" duration-ms="43" started-at="2019-09-28T13:34:22Z" finished-at="2019-09-28T13:34:22Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="tearDownClass" is-config="true" duration-ms="26" started-at="2019-09-28T16:54:47Z" finished-at="2019-09-28T16:54:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testRunner.addMoviesAPI -->
+      </class> <!-- testRunner.addMovieRunner -->
     </test> <!-- Web Testing -->
   </suite> <!-- Suite -->
 </testng-results>

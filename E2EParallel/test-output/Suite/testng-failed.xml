@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="browser" value="api"/>
-  <test name="Web Testing(failed)" parallel="tests">
-    <parameter name="browser" value="api"/>
+  <parameter name="browser" value="chrome"/>
+  <test name="Web Testing(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testRunner.addMoviesAPI">
+      <class name="testRunner.loginMoviesRunner">
         <methods>
-          <include name="Login" invocation-numbers="0"/>
+          <include name="initialize"/>
           <include name="beforeMethod"/>
           <include name="tearDownClass"/>
-          <include name="initialize"/>
+          <include name="Login" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- testRunner.addMoviesAPI -->
+      </class> <!-- testRunner.loginMoviesRunner -->
     </classes>
   </test> <!-- Web Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

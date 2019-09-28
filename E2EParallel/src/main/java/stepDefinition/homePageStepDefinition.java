@@ -4,6 +4,7 @@ import cucumber.api.java.en.Given;
 import objects.TestBase;
 import utility.TLDriverFactory;
 
+import java.util.Map;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -20,7 +21,7 @@ import utility.ReadProperties;
 import utility.TLDriverFactory;
 
 
-public class loginMoviesStepDefinition {
+public class homePageStepDefinition {
 	protected static HomePage HomePage;
 	private static WebDriver driver;
 	private static ExtentTest logger;
@@ -47,8 +48,29 @@ public class loginMoviesStepDefinition {
 
 	}
 	
+	@Then("^verify \"([^\"]*)\" in user profile$")
+	public void verify_in_user_profile(String arg1) throws Throwable {
+		HomePage.verifyUserProfile(arg1);
+	   
+	}
+	
 	@When("^The user enters \"([^\"]*)\" and \"([^\"]*)\" and click on login button$")
 	public void the_user_enters_and_and_click_on_login_button(String arg1, String arg2) throws Throwable {
 		HomePage.loginUser(arg1, arg2);
 	}
+	
+	
+	@Then("^verify Movie with \"([^\"]*)\" is added successfully$")
+	public void verify_Movie_with_is_added_successfully(String arg1) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		HomePage.serachMovies(arg1);
+	}
+	
+	@When("^The user enters user details and click on login button$")
+	public void the_user_enters_user_details_and_click_on_login_button(Map<String, String> testdata) throws Throwable {
+		
+		HomePage.loginUser(testdata.get("user"), testdata.get("password"));
+	}
+	
+	
 }

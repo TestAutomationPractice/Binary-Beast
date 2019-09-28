@@ -155,7 +155,7 @@ Usage:
 Creation Date:
 Modification History:
 ==========================================================================================================================================================*/
-public static void waitTillElementFound(WebElement ElementTobeFound,int seconds) {
+public void waitTillElementFound(WebElement ElementTobeFound,int seconds) {
 	try {
 		logger.log(Status.INFO, "Waiting for Element to be found");
 		WebDriverWait wait = new WebDriverWait(driver, seconds);
@@ -471,13 +471,10 @@ Usage:
 Creation Date:
 Modification History:
 ==========================================================================================================================================================*/
-public static void clickWebelement(WebElement element) {
+public void clickWebelement(WebElement element) {
 	try {
-		logger.log(Status.INFO, "Clicking the Element");
-		boolean elementIsClickable = element.isEnabled();
-		while (elementIsClickable) {
+		//logger.log(Status.INFO, "Clicking the Element");
 		element.click();
-		}
 	} catch (Exception e) {
 		logger.log(Status.ERROR, "Element is not enabled");
 		e.printStackTrace();
@@ -1050,7 +1047,7 @@ public static Connection dbConnection() {
 
 
 
-public static void sendText(WebElement element, String text) {
+public void sendText(WebElement element, String text) {
 	try {
 		TimeUnit.SECONDS.sleep(1);
 		if (element != null && text != null) {

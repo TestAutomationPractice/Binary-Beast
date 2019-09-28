@@ -14,7 +14,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 import objects.TestBase;
 
-@CucumberOptions(features={"src/test/java/features/addMoviesAPI.feature"},glue={"stepDefinition"},plugin={"pretty","html:HTML_Reports/"})
+@CucumberOptions(features={"src/test/java/features/addMovie.feature"},glue={"stepDefinition"},plugin={"pretty","html:HTML_Reports/"})
 
 public class addMovieRunner extends TestBase{		
 	 private TestNGCucumberRunner testNGCucumberRunner;
@@ -34,7 +34,7 @@ public void setUpClass() throws Exception {
 	
 }
 
-@Test(groups = "cucumber", description = "customerAPI", dataProvider = "features")
+@Test(groups = "cucumber", description = "addMovies", dataProvider = "features")
 public void Login(CucumberFeatureWrapper cucumberFeature) {
 	 testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
 }

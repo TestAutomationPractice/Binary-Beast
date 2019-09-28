@@ -4,12 +4,13 @@
  <listners>
    <listner class-name="listeners.TestListener"/>
    </listners>
-  <test  name="Web Testing"  parallel="methods" thread-count="2">
+  <test  name="Web Testing"  parallel="methods" thread-count="1">
    <parameter name="browser" value="chrome"/>  
     <classes>    
       <class name="testRunner.loginMoviesRunner"/>
-      <class name="testRunner.addMovieRunner"/>     
-       <class name="testRunner.addMoviesAPI"/> 
+      <class name="testRunner.addMovieRunner"/>
+      <class name="testRunner.addMovieAPI"/>
     </classes>
+    </test>
   
 </suite> <!-- Suite -->

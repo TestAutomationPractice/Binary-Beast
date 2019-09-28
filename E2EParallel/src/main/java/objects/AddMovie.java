@@ -16,25 +16,24 @@ public class AddMovie {
 
 		private ExtentTest logger;
 		private WebDriver localdriver;
+		private functionLibrary FunctionLibrary;
 
 		@FindBy(name = "title")
 		WebElement txtTitle;
+		
+		@FindBy(xpath = "//a[text()='add movie']")
+		WebElement lnkAddMovie;		
 
 		@FindBy(name = "director")
 		WebElement txtDirector;
 		
-		@FindBy(name = "description")
+		@FindBy(xpath = "//textarea[@name='description']")
 		WebElement txtDescription;
 		
 		@FindBy(name = "file")
 		WebElement txtFile;
 		
-		@FindBy(xpath = "//*[@id=\"main\"]/div/div[6]/div/svg[4]/path")
-		WebElement imgRating;
-
-		@FindBy(xpath = "//a[@href='/addMovie']")
-		WebElement lnkAddMovie;
-
+		
 		@FindBy(xpath = "//label[@for='title']")
 		WebElement lblTitle;
 		
@@ -43,6 +42,12 @@ public class AddMovie {
 		
 		@FindBy(xpath = "//button[text()='Save Movie']")
 		WebElement btnSave;
+		
+		@FindBy(xpath = "//*[name()='svg']")
+		List<WebElement> btnRatings;
+		
+		@FindBy(xpath = "//select[@name='categories']")
+		WebElement listCatogery;
 		
 
 		// constructor
@@ -53,14 +58,15 @@ public class AddMovie {
 			
 			// This initElements method will create all WebElements
 			PageFactory.initElements(driver, this);
-
+			FunctionLibrary = new functionLibrary(driver,logger);
 		}
 
 		// Click on Add movie
 		public void clickAddMovie() {
 			try {
+				FunctionLibrary.waitTillElementFound(lnkAddMovie, 3);
 				lnkAddMovie.click();
-				functionLibrary.waitTillElementFound(lblTitle, 10);
+				FunctionLibrary.waitTillElementFound(lblTitle, 10);
 				if (lblTitle.isDisplayed()) {
 					String  screenshotPath = ScreenshotUtility.getScreenshot(localdriver, "AddMoviePageOpened_Successful");
 					logger.log(Status.PASS, "Add movie Page is opened",MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
@@ -81,12 +87,12 @@ public class AddMovie {
 				txtDirector.sendKeys(Director);
 				txtDescription.sendKeys(Description);
 				txtFile.sendKeys(ImageUrl);
+				FunctionLibrary.selectElementByNameMethod(listCatogery, Categories);
 				if(Categories=="Comedy") {
 					txtComedy.click();
 				}
-				if(Rating == "4") {
-					imgRating.click();
-				}
+		
+				btnRatings.get( Integer.parseInt( Rating)).click();
 				btnSave.click();
 				
 			}catch (Exception e) {
