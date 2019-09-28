@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21501" started-at="2019-09-28T11:24:25Z" finished-at="2019-09-28T11:24:47Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="addMovieRunner.Login(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="Login" class="testRunner.addMovieRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Web Testing" duration-ms="21501" started-at="2019-09-28T11:24:25Z" finished-at="2019-09-28T11:24:47Z">
+      <class name="testRunner.addMovieRunner">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="initialize" is-config="true" duration-ms="7" started-at="2019-09-28T16:54:25Z" finished-at="2019-09-28T16:54:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="setUpClass" is-config="true" duration-ms="262" started-at="2019-09-28T16:54:25Z" finished-at="2019-09-28T16:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2019-09-28T16:54:26Z" finished-at="2019-09-28T16:54:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testRunner.addMovieRunner.Login(cucumber.api.testng.CucumberFeatureWrapper)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Login(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="Login" duration-ms="21138" started-at="2019-09-28T16:54:26Z" description="addMovies" data-provider="features" finished-at="2019-09-28T16:54:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Add Movie when logged in with Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-09-28T16:54:47Z" finished-at="2019-09-28T16:54:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.addMovieRunner@69a10787]" name="tearDownClass" is-config="true" duration-ms="26" started-at="2019-09-28T16:54:47Z" finished-at="2019-09-28T16:54:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.addMovieRunner -->
+    </test> <!-- Web Testing -->
+  </suite> <!-- Suite -->
+</testng-results>
