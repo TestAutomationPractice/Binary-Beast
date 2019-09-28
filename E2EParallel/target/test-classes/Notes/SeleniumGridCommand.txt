@@ -1,0 +1,10 @@
+To Register Hub:
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+Verify Hub is running:
+http://localhost:4444/grid/console
+
+To Register Node:
+java -Dwebdriver.gecko.driver="C:\Users\rishyabgupta\Downloads\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://192.168.1.9:4444/grid/register -port 5566
+
+Refer: https://www.guru99.com/introduction-to-selenium-grid.html

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="35167" started-at="2019-09-28T05:16:45Z" finished-at="2019-09-28T05:17:21Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="loginTestRunner.Login(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.loginTestRunner@11c20519]" name="Login" class="testRunner.loginTestRunner"/>
+        <method signature="searchFlightTestRunner.SearchFlight(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.searchFlightTestRunner@2bbaf4f0]" name="SearchFlight" class="testRunner.searchFlightTestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Web Testing" duration-ms="35167" started-at="2019-09-28T05:16:45Z" finished-at="2019-09-28T05:17:21Z">
+      <class name="testRunner.searchFlightTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.searchFlightTestRunner@2bbaf4f0]" name="setUpClass" is-config="true" duration-ms="300" started-at="2019-09-28T10:46:45Z" finished-at="2019-09-28T10:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:testRunner.searchFlightTestRunner@2bbaf4f0]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2019-09-28T10:46:46Z" finished-at="2019-09-28T10:46:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testRunner.searchFlightTestRunner.SearchFlight(cucumber.api.testng.CucumberFeatureWrapper)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SearchFlight(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.searchFlightTestRunner@2bbaf4f0]" name="SearchFlight" duration-ms="34781" started-at="2019-09-28T10:46:46Z" description="SearchFlight" data-provider="features" finished-at="2019-09-28T10:47:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login to Mercury demo tours site and search for a flight]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchFlight -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testRunner.searchFlightTestRunner@2bbaf4f0]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-09-28T10:47:21Z" finished-at="2019-09-28T10:47:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.searchFlightTestRunner@2bbaf4f0]" name="tearDownClass" is-config="true" duration-ms="26" started-at="2019-09-28T10:47:21Z" finished-at="2019-09-28T10:47:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="PrepareReport()[pri:0, instance:testRunner.searchFlightTestRunner@2bbaf4f0]" name="PrepareReport" is-config="true" duration-ms="0" started-at="2019-09-28T10:47:21Z" finished-at="2019-09-28T10:47:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrepareReport -->
+      </class> <!-- testRunner.searchFlightTestRunner -->
+      <class name="testRunner.loginTestRunner">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testRunner.loginTestRunner@11c20519]" name="initialize" is-config="true" duration-ms="7" started-at="2019-09-28T10:46:45Z" finished-at="2019-09-28T10:46:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testRunner.searchFlightTestRunner@2bbaf4f0]" name="initialize" is-config="true" duration-ms="0" started-at="2019-09-28T10:46:45Z" finished-at="2019-09-28T10:46:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.loginTestRunner@11c20519]" name="setUpClass" is-config="true" duration-ms="282" started-at="2019-09-28T10:46:45Z" finished-at="2019-09-28T10:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:testRunner.loginTestRunner@11c20519]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2019-09-28T10:46:46Z" finished-at="2019-09-28T10:46:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testRunner.loginTestRunner.Login(cucumber.api.testng.CucumberFeatureWrapper)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Login(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.loginTestRunner@11c20519]" name="Login" duration-ms="34307" started-at="2019-09-28T10:46:46Z" description="Login" data-provider="features" finished-at="2019-09-28T10:47:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login to Mercury demo tours site]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testRunner.loginTestRunner@11c20519]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-09-28T10:47:20Z" finished-at="2019-09-28T10:47:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.loginTestRunner@11c20519]" name="tearDownClass" is-config="true" duration-ms="30" started-at="2019-09-28T10:47:20Z" finished-at="2019-09-28T10:47:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.loginTestRunner -->
+    </test> <!-- Web Testing -->
+  </suite> <!-- Suite -->
+</testng-results>

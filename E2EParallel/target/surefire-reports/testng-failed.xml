@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="api"/>
+  <test name="API Testing(failed)" parallel="tests">
+    <parameter name="browser" value="api"/>
+    <classes>
+      <class name="testRunner.loginTestRunner">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- testRunner.loginTestRunner -->
+      <class name="testRunner.customerAPIRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="initialize"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- testRunner.customerAPIRunner -->
+      <class name="testRunner.searchFlightTestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="tearDownClass"/>
+          <include name="initialize"/>
+          <include name="PrepareReport"/>
+        </methods>
+      </class> <!-- testRunner.searchFlightTestRunner -->
+    </classes>
+  </test> <!-- API Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->
